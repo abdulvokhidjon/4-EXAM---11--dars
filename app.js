@@ -229,6 +229,18 @@
 //  Birinchi `if` ifodasida `x == y` rost, chunki taqqoslashdan oldin «5» qatori 5 raqamiga aylantiriladi.
 //  Ikkinchi `if` ifodasida `x === y` noto'g'ri, chunki qiymatlar bir xil bo'lsa ham, turlar har xil (raqam va qator).
 
-
 // N{3}
 
+let son = 6;
+let result = [];
+
+function recursionFuntion() {
+  result.unshift(son);
+  son--;
+  if (1 <= son) {
+    recursionFuntion();
+  }
+  return result;
+}
+
+console.log(recursionFuntion);
