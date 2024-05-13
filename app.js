@@ -243,4 +243,4 @@ function recursionFuntion() {
   return result;
 }
 
-console.log(recursionFuntion);
+console.log(recursionFuntion(son));
